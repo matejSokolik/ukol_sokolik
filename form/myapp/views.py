@@ -16,7 +16,7 @@ from typing import List
 def email_sender( adresat, messsg):
 	server =smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login('sokolim@stredniskola.cz', 'Dunajovice49') #můj cvičný email  pro log
+	server.login('sokolim@stredniskola.cz', '******') #můj cvičný email  pro log
 	server.sendmail("sokolim@stredniskola.cz", adresat,messsg )#funkce pro odeslání emailu
 
 
